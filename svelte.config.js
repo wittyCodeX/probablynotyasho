@@ -1,5 +1,17 @@
+/**
+    * @description      : 
+    * @author           : Administrator
+    * @group            : 
+    * @created          : 01/04/2024 - 15:14:18
+    * 
+    * MODIFICATION LOG
+    * - Version         : 1.0.0
+    * - Date            : 01/04/2024
+    * - Author          : Administrator
+    * - Modification    : 
+**/
 import preprocessor from 'svelte-preprocess';
-import adapter from '@sveltejs/adapter-netlify';
+import adapter from '@sveltejs/adapter-vercel';
 
 const config = {
 	preprocess: preprocessor({
@@ -9,10 +21,8 @@ const config = {
 	}),
 	kit: {
 		adapter: adapter({
-			edge: false,
-			split: false,
-			compress: true
-		})
+			runtime: 'nodejs18.x',
+		}),
 	}
 };
 
