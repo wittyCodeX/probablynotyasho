@@ -28,6 +28,7 @@
 	"dependencies": {
 		"@sanity/client": "^4.0.0",
 		"@sanity/image-url": "^1.0.1",
+		"@sveltejs/adapter-vercel": "^3.0.0",
 		"highlight.js": "^11.7.0",
 		"marked": "^4.2.12",
 		"nprogress": "^0.2.0",
